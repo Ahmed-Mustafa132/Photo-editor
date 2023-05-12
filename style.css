@@ -17,11 +17,10 @@ body{
    display: grid;
    grid-template-columns: 5fr 3fr;
 }
-img{
-    display: flex;
-    flex-direction: column;
-    gap:50px ; 
-    justify-content: center;
+.img{
+    display: grid;
+    gap:10px;
+    justify-content: start;
     align-items: center;
 }
 .img img{
@@ -29,7 +28,12 @@ img{
     max-height: 60vh;
 }
 .uploud {
+    width: 1;
+    display: grid;
+    height: 100%;
     margin-top: 20px;
+    justify-content: center;
+    align-items: center;
 }
 .uploud input{
     display: none;
@@ -64,7 +68,7 @@ img{
     color: #fff;
     padding: 10px 20px ;
     background: #060;
-    counter:pointer;
+    counter: pointer;
 }
 @media screen and (max-width:650px) {
     .contener{
